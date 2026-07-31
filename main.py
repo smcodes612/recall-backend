@@ -13,8 +13,10 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000",
-    "https://recall-blue.vercel.app",
+    allow_origins=[
+        "http://localhost:3000",
+        "https://recall-blue.vercel.app",
+        "https://recall-git-main-recall7.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
