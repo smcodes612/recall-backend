@@ -14,7 +14,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
-    "https://recall-clpj.vercel.app",
+    "https://recall-blue.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
